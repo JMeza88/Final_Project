@@ -1,0 +1,39 @@
+body {
+	font-family: 'times new roman';
+	box-sizing: border-box;
+	margin: 0px;
+}
+
+.clearfix:after {
+content: “”;
+display: block;
+clear: both;
+}
+
+
+nav {
+	background-color: grey
+}
+header {
+	background-color: blue
+}
+main {
+	border: 1px solid black;
+	box-sizing: border-box;
+	height: 300px;
+}
+
+article {
+	float:left;
+	width: 33.333%;
+	height: 100%;
+	display: inline-block;
+	background-color: pink;
+}
+
+section {
+	background-color: red
+}
+footer {
+	background-color: black;
+}
