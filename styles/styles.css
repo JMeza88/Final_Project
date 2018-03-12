@@ -8,6 +8,15 @@ body {
 	flex-direction: column;
 	flex-wrap: wrap;
 	padding: 2px;
+	min-height: 100vh;
+}
+
+a {
+	color: #ffffff;
+}
+
+article a {
+	text-decoration: none;
 }
 
 nav {
@@ -78,18 +87,26 @@ section {
 	display:flex;
 	justify-content: center;
 	align-items: center;
-	height: 55vh;
+	flex-direction: column;
+	flex:2;
 }
 
 .overlay {
 	width: 90vw;
-	height: 30vh;
 	background-color:rgba(255,255,255, 0.2);
 	margin:25px;
 }
 
 .insideoverlay {
 	margin: 10px;
+}
+
+.extratext {
+	display:none;
+}
+
+.read_less {
+	display:none;
 }
 
 footer {
