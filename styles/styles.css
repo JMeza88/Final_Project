@@ -11,6 +11,7 @@ body {
 	min-height: 100vh;
 }
 
+
 a {
 	color: #ffffff;
 }
@@ -26,7 +27,14 @@ nav {
 
 nav div {
 	flex-direction: column;
+	margin: 3px;
+}
 
+
+
+nav img {
+	width:4vh;
+	height:4vh;
 }
 
 header {
@@ -34,7 +42,15 @@ header {
 	flex-direction: column;
 	justify-content: center;
 	align-items:center;
+	background-image: url('../images/classroom.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	transition: background 1s linear;
+}
 
+.backgroundSlideshow {
+	display:none;
 }
 
 img {
@@ -78,10 +94,15 @@ article {
 	align-items: center;
 }
 
-h3 {
+h2 {
 	font-size: 18px;
 }
 
+h3 {
+background-color:rgba(255,255,255, 0.5);
+
+
+}
 
 section {
 	display:flex;
