@@ -33,6 +33,6 @@ $('header').css('background-image', 'url(' + $slideShow[$currentSlide] + ')');
         clearInterval($transition);
     }
 
-   },3000);
+   },4000);
 	
 });
