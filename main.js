@@ -29,10 +29,13 @@ var $currentSlide = 0;
 var $transition = setInterval(function(){
 $('header').css('background-image', 'url(' + $slideShow[$currentSlide] + ')');
 	$currentSlide++;
-	 if($currentSlide === 3) {
-        clearInterval($transition);
+	 if($currentSlide >=$slideShow.length) {
+        $currentSlide = 0;
     }
-
    },4000);
+
+console.log($slideShow);
+
+console.log($currentSlide);
 	
 });

@@ -100,16 +100,19 @@ h2 {
 
 h3 {
 background-color:rgba(255,255,255, 0.5);
-
+padding: 10px;
+margin: 0px;
 
 }
+
+
 
 section {
 	display:flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	flex:2;
+	flex:4;
 }
 
 .overlay {
@@ -122,6 +125,14 @@ section {
 	margin: 10px;
 }
 
+
+li{
+	margin-top: 7px;
+}
+
+
+
+
 .extratext {
 	display:none;
 }
@@ -131,7 +142,10 @@ section {
 }
 
 footer {
-	border:1px solid;
 	flex-direction: column;
+}
+
+footer p {
+	margin-left: 20px;
 }
 
