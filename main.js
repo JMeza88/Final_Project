@@ -2,7 +2,7 @@ $(document).ready(function(){
 
 $('.read_more').click(readMore)
 $('.read_less').click(readLess)
-
+$('.plan').click(lessonPlans)
 
 function readMore(){
 		$('.extratext').slideDown('slow');
@@ -33,9 +33,32 @@ $('header').css('background-image', 'url(' + $slideShow[$currentSlide] + ')');
         $currentSlide = 0;
     }
    },4000);
-
-console.log($slideShow);
-
-console.log($currentSlide);
 	
 });
+
+window.onscroll = function() {createSticky()};
+
+var nav = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function createSticky() {
+  if (window.pageYOffset >= sticky) {
+    nav.classList.add("sticky");
+  } else {
+    nav.classList.remove("sticky");
+  }
+};
+
+function lessonPlans(){
+ /*$(event.target).children().toggle()
+ console.log(event.target)*/
+
+var $lesson = $(event.target)
+if ($lesson.hasClass('plan')) {
+	$lesson.children().toggle()
+}
+
+}
+
+
+

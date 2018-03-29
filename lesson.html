@@ -9,12 +9,16 @@
 	<title>AboutMe</title>
 </head>
 <body>
-	<nav>
+	<nav class="navbar" id="navbar">
+		<h4>Social:</h4>
 		<div class="facebook icon">
-			<img src="./images/facebook-logo-jeff.png" alt="facebook icon">
+			<a href="https://www.facebook.com/erika.fermin.31?" class="facebooklink">
+				<img src="./images/facebook-logo-jeff.png" alt="facebook icon">
+			</a>
 		</div>
 		<div class="twitter icon">
-			<img src="./images/twitter-logo-jeff.png" alt="twitter icon">
+			<a href="https://twitter.com/MrsMezaMHS?" class="twitterlink">			<img src="./images/twitter-logo-jeff.png" alt="twitter icon">
+			</a>
 		</div>
 		<div class="LinkedIn icon">
 			<img src="./images/google-logo-.png" alt="LinkedIn icon">
@@ -42,22 +46,31 @@
 
 		</div>
 	</header>
-	<main class="tabs">
-		<article>
+	<main>
+		<article class="about tab">
 			<div class="icon">
+				<a href="./index.html" class="about"> <img src="./images/home-vector-invert.png" alt="about_icon"></a>
 			</div>
-			<h2> <a href="./index.html" class="about">About Me</a>
-			</h2>
+			 <a href="./index.html" class="about">
+			 	<h2>About Me</h2>
+			 </a>
+			
 		</article>
-		<article>
+		<article class="lesson tab">
 			<div class="icon">
+				<a href="./lesson.html" class="lesson">	
+					<img src="./images/jeff--white-vector-list.png" alt="curriculum_icon">
+				</a>
 			</div>
-			<h2> <a href="./lesson.html" class="lesson">Curriculum</a>
-			</h2>
+			<a href="./lesson.html" class="lesson">
+				<h2> Curriculum</h2>
+			</a>
+			
 		</article>
 
-		<article>
+		<article class="contact tab">
 			<div class="icon">
+				<a href="./contact.html" class="history"><img src="./images/jeff--white-globe-vector-updated.png" alt="contact_me_icon"></a>
 			</div>
 			<h2> <a href="./contact.html" class="history">Contact Me</a>
 			</h2>
@@ -73,33 +86,46 @@
 					Global History: Lesson Plans and Material
 					</h3>
 						<ul>
-							<li>
-								Beginning of the Renissance </br>
-					 			<a href="#/" class="read_more">Read More</a>
-					 			<span class="extratext">
-					 			<p>
-					 		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis mollitia, iure expedita eum ducimus esse voluptatum. Error in voluptatem officia incidunt beatae atque, animi sed? Odio minima beatae nam odit.
+							<li id='renissancelesson' class="plan" >
+								Beginning of the Renissance:
+								</br>
+								<ul style="display:none">
+									Summary of what this is: iure expedita eum ducimus esse voluptatum. Error in voluptatem officia incidunt beatae atque, animi sed? Odio minima beatae nam odit.
+								
 
-					 		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis autem cumque dolores ex non repellendus odio adipisci aut nostrum. Quibusdam doloremque reiciendis sapiente accusantium expedita dicta provident tempora corrupti repellat!
-					 		<a href="#/" class="read_less">Read Less</a>
-					 		<br/>
-					 		</p>
-								 </span>
+									<li>
+										Lesson Plan
+									</li>
 
+									<li>
+										Powerpoint
+									</li>
+									<li>
+										Reading Material
+									</li>
+								 </ul>
 							</li>
-							<li>
-								Athens vs Sparta </br>
-					 			<a href="#/" class="read_more">Read More</a>
-					 			<span class="extratext">
-					 			<p>
-					 		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis mollitia, iure expedita eum ducimus esse voluptatum. Error in voluptatem officia incidunt beatae atque, animi sed? Odio minima beatae nam odit.
+					
+					 			
 
-					 		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis autem cumque dolores ex non repellendus odio adipisci aut nostrum. Quibusdam doloremque reiciendis sapiente accusantium expedita dicta provident tempora corrupti repellat!
-					 		<a href="#/" class="read_less">Read Less</a>
-					 		<br/>
-					 		</p>
-								 </span>
+							<li id='athenslesson' class="plan">
+								Athens vs Sparta 
+								</br>
+					 			<ul style="display:none">
+									Summary of what this is: iure expedita eum ducimus esse voluptatum. Error in voluptatem officia incidunt beatae atque, animi sed? Odio minima beatae nam odit.
+								
 
+									<li>
+										Lesson Plan
+									</li>
+
+									<li>
+										Powerpoint
+									</li>
+									<li>
+										Reading Material
+									</li>
+								 </ul>
 							</li>
 						</ul>
 
@@ -107,47 +133,65 @@
 					<h3>U.S. History: Lesson Plans and Materials
 					</h3>
 						<ul>
-							<li>
+							<li id='indianact' class="plan">
 								Indian Removal Act
 							</br>
-					 		<a href="#/" class="read_more">Read More</a>
-						
-					 		<span class="extratext">
-					 			<p>
-					 		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis mollitia, iure expedita eum ducimus esse voluptatum. Error in voluptatem officia incidunt beatae atque, animi sed? Odio minima beatae nam odit.
+					 		<ul style="display:none">
+									Summary of what this is: iure expedita eum ducimus esse voluptatum. Error in voluptatem officia incidunt beatae atque, animi sed? Odio minima beatae nam odit.
+								
 
-					 		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis autem cumque dolores ex non repellendus odio adipisci aut nostrum. Quibusdam doloremque reiciendis sapiente accusantium expedita dicta provident tempora corrupti repellat!
-					 				<a href="#/" class="read_less">Read Less</a><br/>
-					 			</p>
-					 		</span>
+									<li>
+										Lesson Plan
+									</li>
+
+									<li>
+										Powerpoint
+									</li>
+									<li>
+										Reading Material
+									</li>
+								 </ul>
+							</li>
 						</li>
-						<li>
+						<li id='otherhalf' class="plan">
 							How the other half lives: Inquiry
 							</br>
-					 		<a href="#/" class="read_more">Read More</a>
-						
-					 		<span class="extratext">
-					 			<p>
-					 		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis mollitia, iure expedita eum ducimus esse voluptatum. Error in voluptatem officia incidunt beatae atque, animi sed? Odio minima beatae nam odit.
+					 		<ul style="display:none">
+									Summary of what this is: iure expedita eum ducimus esse voluptatum. Error in voluptatem officia incidunt beatae atque, animi sed? Odio minima beatae nam odit.
+								
 
-					 		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis autem cumque dolores ex non repellendus odio adipisci aut nostrum. Quibusdam doloremque reiciendis sapiente accusantium expedita dicta provident tempora corrupti repellat!
-					 				<a href="#/" class="read_less">Read Less</a><br/>
-					 			</p>
-					 		</span>
+									<li>
+										Lesson Plan
+									</li>
+
+									<li>
+										Powerpoint
+									</li>
+									<li>
+										Reading Material
+									</li>
+								 </ul>
+							</li>
 						</li>
-						<li>
+						<li id='socialreform' class="plan">
 							Social Reform of the Rotesseria Chicken era
 							</br>
-					 		<a href="#/" class="read_more">Read More</a>
-						
-					 		<span class="extratext">
-					 			<p>
-					 		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis mollitia, iure expedita eum ducimus esse voluptatum. Error in voluptatem officia incidunt beatae atque, animi sed? Odio minima beatae nam odit.
+					 		<ul style="display:none">
+									Summary of what this is: iure expedita eum ducimus esse voluptatum. Error in voluptatem officia incidunt beatae atque, animi sed? Odio minima beatae nam odit.
+								
 
-					 		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis autem cumque dolores ex non repellendus odio adipisci aut nostrum. Quibusdam doloremque reiciendis sapiente accusantium expedita dicta provident tempora corrupti repellat!
-					 				<a href="#/" class="read_less">Read Less</a><br/>
-					 			</p>
-					 		</span>
+									<li>
+										Lesson Plan
+									</li>
+
+									<li>
+										Powerpoint
+									</li>
+									<li>
+										Reading Material
+									</li>
+								 </ul>
+							</li>
 						</li>
 					</ul>
 					</div>

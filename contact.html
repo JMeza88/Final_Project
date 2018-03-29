@@ -9,12 +9,16 @@
 	<title>AboutMe</title>
 </head>
 <body>
-	<nav>
+	<nav class="navbar" id="navbar">
+		<h4>Social:</h4>
 		<div class="facebook icon">
-			<img src="./images/facebook-logo-jeff.png" alt="facebook icon">
+			<a href="https://www.facebook.com/erika.fermin.31?" class="facebooklink">
+				<img src="./images/facebook-logo-jeff.png" alt="facebook icon">
+			</a>
 		</div>
 		<div class="twitter icon">
-			<img src="./images/twitter-logo-jeff.png" alt="twitter icon">
+			<a href="https://twitter.com/MrsMezaMHS?" class="twitterlink">			<img src="./images/twitter-logo-jeff.png" alt="twitter icon">
+			</a>
 		</div>
 		<div class="LinkedIn icon">
 			<img src="./images/google-logo-.png" alt="LinkedIn icon">
@@ -42,22 +46,31 @@
 
 		</div>
 	</header>
-	<main class="tabs">
-		<article>
+	<main>
+		<article class="about tab">
 			<div class="icon">
+				<a href="./index.html" class="about"> <img src="./images/home-vector-invert.png" alt="about_icon"></a>
 			</div>
-			<h2> <a href="./index.html" class="about">About Me</a>
-			</h2>
+			 <a href="./index.html" class="about">
+			 	<h2>About Me</h2>
+			 </a>
+			
 		</article>
-		<article>
+		<article class="lesson tab">
 			<div class="icon">
+				<a href="./lesson.html" class="lesson">	
+					<img src="./images/jeff--white-vector-list.png" alt="curriculum_icon">
+				</a>
 			</div>
-			<h2> <a href="./lesson.html" class="lesson">Curriculum</a>
-			</h2>
+			<a href="./lesson.html" class="lesson">
+				<h2> Curriculum</h2>
+			</a>
+			
 		</article>
 
-		<article>
+		<article class="contact tab">
 			<div class="icon">
+				<a href="./contact.html" class="history"><img src="./images/jeff--white-globe-vector-updated.png" alt="contact_me_icon"></a>
 			</div>
 			<h2> <a href="./contact.html" class="history">Contact Me</a>
 			</h2>
@@ -69,15 +82,20 @@
 		<div class="overlay">
 			<div class="insideoverlay">
 				<h3>Email Form</h3>
-				<form action="mailto:jmeza0588@gmail.com" method="post" enctype="text/plain">
-					Full Name: <input type="text" name="full_name">
+				<form action="mailto:jmeza0588@gmail.com?subject=ContactMe_Form" method="post" enctype="text/plain">
+					<div class="formcontainer">
+						<label for="fname">Full Name:</label> 
+						<input type="text" name="full_name">
 					<br>
-					E-mail: <input type="text" name="mail"><br>
-					Body: <input type="text" name="body" size="50">
+					<label for="youremail">Your Email:</label>
+					<input type="text" name="mail">
 					<br>
+					<label for="inquiry">Inquiry:</label>
+					<input type="text" id="body" name="body">
 					<br>
 					<input type="submit" value="Send"> 
 					<input type="reset" value="Reset">
+					</div>
 				</form>
 
 
