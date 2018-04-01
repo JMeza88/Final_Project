@@ -3,6 +3,8 @@ $(document).ready(function(){
 $('.read_more').click(readMore)
 $('.read_less').click(readLess)
 $('.plan').click(lessonPlans)
+$('.material').click(materials)
+
 
 function readMore(){
 		$('.extratext').slideDown('slow');
@@ -14,7 +16,7 @@ function readLess (){
 	$('.extratext').slideUp('slow');
 	$('.read_less').css('display','none');
 	$('.read_more').css('display','block');
-}
+};
 
 
 // var $bg1 = $('.bg1 img').attr('src');
@@ -34,7 +36,7 @@ $('header').css('background-image', 'url(' + $slideShow[$currentSlide] + ')');
     }
    },4000);
 	
-});
+//});
 
 window.onscroll = function() {createSticky()};
 
@@ -57,8 +59,16 @@ var $lesson = $(event.target)
 if ($lesson.hasClass('plan')) {
 	$lesson.children().toggle()
 }
+} ;
 
-}
+function materials(){
+var $material = $(event.target)
+if ($material.hasClass('material')) {
+	$material.children().toggle()
+} 
+};
+
+});
 
 
 

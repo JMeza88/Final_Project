@@ -94,7 +94,6 @@ main {
 	display:flex;
 	justify-content: space-evenly;
 	align-items: center;
-	background-color: #ffffff;
 	height: 11vh;
 	background-color: rgba(255,255,255, 0.5);
 }
@@ -114,14 +113,7 @@ article a {
 	text-decoration: none;
 }
 
-article:hover {
-  background-color: #ddd;
-  color: #36374b;
-}
 
-article a:hover {
-	color: #36374b;
-}
 
 article .icon img {
 	display: none;
@@ -145,6 +137,7 @@ section {
 	display:flex;
 	flex-direction: row;
 	box-sizing: border-box;
+	flex:2;
 }
 
 .overlay {
@@ -163,7 +156,10 @@ li{
 	margin-top: 7px;
 }
 
-
+.presentation{
+	width: 150px;
+	height: 200px;
+}
 
 
 .extratext {
@@ -213,11 +209,15 @@ input[type=button], input[type=submit], input[type=reset] {
 
 footer {
 	flex-direction: row;
-	padding-bottom: 15px
+	padding: 10px 0 10px 0;
+	background-color: rgba(255,255,255, 0.4);
+}
+
+.copyright {
+	margin-left: 25px;
 }
 
 footer p {
-	margin: 0 0 0 25px;
 	-webkit-margin-before: 0em;
 	-webkit-margin-after: 0em;
 
@@ -283,6 +283,20 @@ footer p {
 
   	}
 
+  	article:hover {
+  background-color: #ddd;
+  color: #36374b;
+}
+
+article a:hover {
+	color: #36374b;
+}
+
+	.presentation{
+	width: 480px;
+	height: 640px;
+	}
+
   	.extratext {
   		display:block;
   	}
@@ -291,7 +305,7 @@ footer p {
 		display: none;
 	}
 
-	.plan ul {
+	.course{
 		display:block !important;
 	}
 
